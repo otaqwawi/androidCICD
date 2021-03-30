@@ -88,7 +88,7 @@ def get_app(app_dir):
         (str, str): App version and path app file.
     '''
     # Get output.json file to get info about app
-    output_path = os.path.join(app_dir, 'output.json')
+    output_path = os.path.join(app_dir, 'output-metadata.json')
 
     with(open(output_path)) as app_output:
         json_data = json.load(app_output)
